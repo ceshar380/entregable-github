@@ -10,17 +10,15 @@ if jugador.lower() == "rock":
     if resp_compu == "rock":
         print("empate")
 
-
-
-if jugador.lower()== "paper":
-    if resp_compu == "spock" or resp_compu == "rock":
+elif jugador.lower() == "paper":
+    if resp_compu == "rock" or resp_compu == "spock":
         print("ganaste")
-    if resp_compu == "scissors" or resp_compu == "lizard":
-        print("perdiste")
-    if resp_compu == "paper":
+    elif resp_compu == "paper":
         print("empate")
+    else:
+        print("perdiste")
 
-if jugador.lower() == "scissors":
+elif jugador.lower() == "scissors":
     if resp_compu == "paper" or resp_compu == "lizard":
         print("ganaste")
     if resp_compu == "rock" or resp_compu == "spock":
@@ -28,4 +26,4 @@ if jugador.lower() == "scissors":
     if resp_compu == "scissors":
         print("empate")
 
-if jugador.lower()
+elif jugador.lower()
