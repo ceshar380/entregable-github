@@ -9,3 +9,10 @@ if jugador.lower() == "rock":
         print("perdiste")
     if resp_compu == "rock":
         print("empate")
+elif jugador.lower() == "paper":
+    if resp_compu == "rock" or resp_compu == "spock":
+        print("ganaste")
+    elif resp_compu == "paper":
+        print("empate")
+    else:
+        print("perdiste")
