@@ -1,7 +1,8 @@
 from random import randint
-jugador = input()
-compu = ["Rock","Paper","Scissors","Lizard", "Spock"]
-resp_compu = compu[randint(0,5)]
+jugador = input("Escribe tu jugada (rock, paper, scissors, lizard o spock): ")
+compu = ["rock","paper","scissors","lizard", "spock"]
+resp_compu = compu[randint(0,4)]
+print(f"Tu oponente ha elegido {resp_compu}")
 if jugador.lower() == "rock":
     if resp_compu == "scissors" or resp_compu == "lizard":
         print("ganaste")
@@ -26,4 +27,18 @@ elif jugador.lower() == "scissors":
     if resp_compu == "scissors":
         print("empate")
 
-elif jugador.lower()
+elif jugador.lower() == "lizard":
+    if resp_compu == "paper" or resp_compu == "spock":
+        print("ganaste")
+    elif resp_compu == "lizard":
+         print("empate")
+    else:
+        print("perdiste")
+
+elif jugador.lower() == "spock":
+    if resp_compu == "scissors" or resp_compu == "rock":
+        print("ganaste")
+    elif resp_compu == "spock":
+         print("empate")
+    else:
+        print("perdiste")
